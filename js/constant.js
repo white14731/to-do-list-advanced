@@ -1,0 +1,13 @@
+export const newNoteBtn = document.querySelector('.main__btn')
+export const modalWindows = document.querySelector('.main__modal')
+export const closeModalWindows = document.querySelector('.btn-close')
+export const inpNewNote = document.querySelector('.inp-name-note')
+export const addNewNote = document.querySelector('.btn-add')
+export const listNote = document.querySelector('.main__note')
+export const searchItem  = document.querySelector('.inp-search')
+export const btnSort = document.querySelector('.btn-sort')
+export const allMenuNote = document.querySelector('.btn-all-note-continue')
+export const complitedNoteSort = document.querySelector('.complitedNote')
+export const unComplitedNoteSort = document.querySelector('.uncComplitedNote')
+export const allNoteList = document.querySelector('.all-note')
+export const arrList = []

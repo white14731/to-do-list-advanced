@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+:root {
+  --puple-color: #6C63FF;
+  --black-color: #000000;
+  --white-color: #ffff;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn-color {
+  border: unset;
+  background-color: var(--puple-color);
+  border-radius: 5px;
+  color: var(--white-color);
+}
+
+.container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+header .header__title {
+  margin-top: 40px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+header .header__tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+header .header__tools .header__tools-btn {
+  border: unset;
+  border-radius: 5px;
+}
+header .header__tools .inp-search {
+  height: 38px;
+  width: 750px;
+  padding: 0 15px;
+  border-radius: 5px;
+  border: 1px solid var(--puple-color);
+  outline: var(--puple-color);
+}
+header .header__tools .btn-all-note .btn-sort {
+  height: 38px;
+  width: 127px;
+}
+header .header__tools .btn-all-note .btn-all-note-continue {
+  display: grid;
+  grid-template-rows: 0fr;
+  width: 115px;
+  padding: 0 5px;
+  overflow: hidden;
+  transition: grid-template-rows 0.3s, border 0.5s;
+}
+header .header__tools .btn-all-note .btn-all-note-continue li {
+  margin: 5px auto;
+  text-align: center;
+  list-style: none;
+  color: var(--puple-color);
+  cursor: pointer;
+}
+header .header__tools .btn-all-note .btn-all-note-continue.open-menu-sort {
+  grid-template-rows: 1fr;
+  overflow: unset;
+  border: 1px solid var(--puple-color);
+  border-radius: 5px;
+}
+header .header__tools .btn-mode {
+  height: 38px;
+  width: 38px;
+  padding: 8px;
+}
+
+.main__modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.main__modal.open {
+  visibility: visible;
+  opacity: 1;
+}
+.main__modal .main__modal_box {
+  width: 500px;
+  height: 289px;
+  padding: 18px;
+  z-index: 1;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 50%;
+  border-radius: 5px;
+}
+.main__modal .main__modal_box .main__modal_box-title {
+  text-align: center;
+}
+.main__modal .main__modal_box .main__modal_box-title label input {
+  width: 440px;
+  height: 38px;
+  margin-top: 25px;
+  padding: 0 15px;
+  border-radius: 5px;
+  border: 1px solid var(--puple-color);
+  outline: var(--puple-color);
+}
+.main__modal .main__modal_box .main__modal_box-btn-div {
+  display: flex;
+  justify-content: space-between;
+}
+.main__modal .main__modal_box .main__modal_box-btn-div .main__modal_box_btn {
+  width: 110px;
+  height: 38px;
+  padding: 10px 22px;
+  font-size: 15px;
+}
+.main__modal .main__modal_box .main__modal_box-btn-div .btn-close {
+  background-color: unset;
+  border: 1px solid var(--puple-color);
+  color: var(--puple-color);
+}
+
+main {
+  min-height: 70vh;
+  position: relative;
+}
+main .main__note {
+  margin-top: 30px;
+}
+main .main__note .main__note-list {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--puple-color);
+  padding: 17px;
+}
+main .main__note .main__note-list h3 {
+  margin-left: 17px;
+  font-size: 20px;
+  font-weight: 420;
+}
+main .main__note .main__note-list .main__note-list-checkbox {
+  width: 26px;
+  height: 26px;
+  outline: 1px solid var(--puple-color);
+  border-radius: 5px;
+}
+main .main__note .main__note-list.checked {
+  text-decoration: line-through;
+  color: grey;
+}
+main .main__add-note .main__btn {
+  height: 50px;
+  width: 50px;
+  border: unset;
+  border-radius: 50%;
+  background-color: var(--puple-color);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: white;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,42 @@
+main{
+  min-height: 70vh;
+  position: relative;
+.main__note{
+  margin-top: 30px;
+    .main__note-list{
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid var(--puple-color);
+      padding: 17px;
+      h3{
+        margin-left: 17px;
+        font-size: 20px;
+        font-weight: 420;
+      }
+      .main__note-list-checkbox{
+        width: 26px;
+        height: 26px;
+        outline: 1px solid var(--puple-color);
+        border-radius: 5px;
+      }
+      &.checked{
+        text-decoration: line-through;
+        color: grey;
+      }
+    }
+}
+  .main__add-note{
+    .main__btn{
+      height: 50px;
+      width: 50px;
+      border: unset;
+      border-radius: 50%;
+      background-color: var(--puple-color);
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      color: white;
+      font-size: 30px;
+    }
+  }
+}
