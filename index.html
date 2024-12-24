@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/main.css">
+    <script src="js/main.js" type="module" defer></script>
+</head>
+<body>
+<header class="header container">
+    <div class="header__title">
+        <h3>СПИСОК ДЕЛ</h3>
+    </div>
+    <div class="header__tools">
+            <input type="text" placeholder="Найти задачу..." class="header__tools-inp inp-search">
+        <div class="btn-all-note">
+        <button class="header__tools-btn btn-sort btn-color">Все</button>
+            <div class="btn-all-note-continue">
+                <div style="min-height: 0">
+                    <li class="all-note">Все</li>
+                    <li class="complitedNote">Завершенные</li>
+                    <li class="uncComplitedNote">Незавершенные</li>
+                </div>
+            </div>
+        </div>
+        <button class="header__tools-btn btn-mode btn-color">
+            <img src="icons/moon.svg" alt="">
+        </button>
+    </div>
+</header>
+<main class="main container">
+    <div class="main__modal">
+        <div class="main__modal_box">
+            <div class="main__modal_box-title">
+                <h3>Добавить задачу</h3>
+            <label>
+                <input type="text" class="main__modal_box_inp inp-name-note" placeholder="Введите название задачи...">
+            </label>
+            </div>
+            <div class="main__modal_box-btn-div">
+                <button class="main__modal_box_btn btn-close btn-color">Закрыть</button>
+                <button class="main__modal_box_btn btn-add btn-color">Добавить</button>
+            </div>
+        </div>
+    </div>
+    <div class="main__note">
+    </div>
+        <div class="main__add-note">
+            <button class="main__btn">+</button>
+        </div>
+</main>
+</body>
+</html>
